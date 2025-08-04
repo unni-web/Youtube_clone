@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   YouTube Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-white p-4 flex items-center justify-between shadow">
+   <div class="flex items-center">
+    <i class="fas fa-bars text-gray-600 text-2xl mr-4">
+    </i>
+    <img alt="YouTube Logo" class="h-8" height="40" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" width="100"/>
+   </div>
+   <div class="flex-grow mx-4 hidden md:block">
+    <input class="w-full p-2 rounded border border-gray-300" placeholder="Search" type="text"/>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search text-gray-600 text-2xl md:hidden">
+    </i>
+    <i class="fas fa-video text-gray-600 text-2xl hidden md:block">
+    </i>
+    <i class="fas fa-th text-gray-600 text-2xl hidden md:block">
+    </i>
+    <i class="fas fa-bell text-gray-600 text-2xl hidden md:block">
+    </i>
+    <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://tse4.mm.bing.net/th/id/OIP.yaCxqEicmO4jwsROZQsAsQHaHa?pid=Api&P=0&h=180" width="40"/>
+   </div>
+  </header>
+  <div class="flex">
+   <aside class="w-64 bg-white p-4 hidden md:block">
+    <nav class="space-y-2">
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-home text-red-600">
+      </i>
+      <span class="font-semibold">
+       Home
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-compass">
+      </i>
+      <span>
+       Explore
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-subscript">
+      </i>
+      <span>
+       Subscriptions
+      </span>
+     </a>
+     <hr/>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-book">
+      </i>
+      <span>
+       Library
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-history">
+      </i>
+      <span>
+       History
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-clock">
+      </i>
+      <span>
+       Watch later
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-thumbs-up">
+      </i>
+      <span>
+       Liked videos
+      </span>
+     </a>
+     <hr/>
+     <h2 class="text-red-600 font-semibold">
+      SUBSCRIPTIONS
+     </h2>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-music">
+      </i>
+      <span>
+       Music
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-gamepad">
+      </i>
+      <span>
+       Gaming
+      </span>
+     </a>
+     <a class="flex items-center space-x-4 p-2 rounded hover:bg-gray-200" href="#">
+      <i class="fas fa-film">
+      </i>
+      <span>
+       Movies
+      </span>
+     </a>
+     <hr/>
+     <h2 class="text-gray-600 font-semibold">
+      MORE FROM YOUTUBE
+     </h2>
+     </a>
+    </nav>
+   </aside>
+   <main class="flex-grow p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 170334.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        VIKRAM - Official Trailer | Kamal Haasan | VijaySethupathi, FahadhFaasil | LokeshKanagaraj | Anirudh
+       </h3>
+       <p class="text-sm text-gray-600">
+        Mythri Movie Makers
+       </p>
+       <p class="text-sm text-gray-600">
+        3.6K watching
+       </p>
+       <span class="text-red-600 text-xs font-semibold">
+        LIVE NOW
+       </span>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 170744.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Rolex Theme Video - Vikram | Kamal Haasan | ANIRUDH RAVICHANDER | Lokesh Kanagaraj
+       </h3>
+       <p class="text-sm text-gray-600">
+        Sun Pictures
+       </p>
+       <p class="text-sm text-gray-600">
+        48M views • 3 year ago
+       </p>
+           <!-- <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg" width="40"/> -->
+
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 171009.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        NGK - Anbae Peranbae Video | Suriya | Yuvan Shankar Raja | SelvaraghavanDesign Fails So Bad it's Actually...
+       </h3>
+       <p class="text-sm text-gray-600">
+        Sonymusicsouth
+       </p>
+       <p class="text-sm text-gray-600">
+        4.5M views • 1 day ago
+       </p>
+           <!-- <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg" width="40"/> -->
+
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 170940.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Oru Malai Video Song - Ghajini | Suriya | Asin | Nayanthara | Harris Jayaraj | A.R. Murugadoss
+       </h3>
+       <p class="text-sm text-gray-600">
+        Ghafa Entertainment
+       </p>
+       <p class="text-sm text-gray-600">
+        5M views • 10 day ago
+       </p>
+           <!-- <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg" width="40"/> -->
+
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 171544.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Vaaranam Aayiram - Nenjukkul Peidhidum Video | Harris Jayaraj | Suriya
+       </h3>
+       <p class="text-sm text-gray-600">
+        Sonymusicsouth
+       </p>
+       <p class="text-sm text-gray-600">
+        8M views • 4 year ago
+       </p>
+       <!-- <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg" width="40"/> -->
+
+       </span>
+      </div>
+     </div>
+     <div class="bg-white p-2 rounded shadow">
+      <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 171711.png" width="320"/>
+      <div class="mt-2">
+       <h3 class="font-semibold">
+        Thaanaa Serndha Koottam - Naana Thaana Tamil Video | Suriya | Anirudh l Keerthi Suresh
+       </h3>
+       <p class="text-sm text-gray-600">
+        Sonymusicsouth
+       </p>
+       <p class="text-sm text-gray-600">
+        6M views • 1 year ago
+       </p>
+         <!-- <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg" width="40"/> -->
+
+      </div>
+     </div>
+      <div class="bg-white p-2 rounded shadow">
+        <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 171840.png" width="320"/>
+        <div class="mt-2">
+        <h3 class="font-semibold">
+          Kaappaan - Hey Amigo Video | Suriya, Sayyeshaa | Harris Jayaraj | K.V. Anand
+        </h3>
+        <p class="text-sm text-gray-600">
+          Sonymusicsouth
+        </p>
+        <p class="text-sm text-gray-600">
+        45M views • 5 year ago
+        </p>
+        <!-- <span class="text-red-600 text-xs font-semibold">
+          LIVE NOW
+        </span> -->
+        </div>  
+      </div>
+      <div class="bg-white p-2 rounded shadow">
+        <img alt="Video Thumbnail" class="w-full rounded" height="180" src="Screenshot 2025-08-04 171939.png" width="320"/>
+        <div class="mt-2">
+        <h3 class="font-semibold">
+          Kadhal Vandhale - Video Song | Singam | Suriya | Anushka | Sun Music
+        </h3>
+        <p class="text-sm text-gray-600">
+          Sun Pictures
+        </p>
+        <p class="text-sm text-gray-600">
+        10M views • 1 month ago
+        </p>
+       <img alt="User Avatar" class="h-8 w-8 rounded-full" height="40" src="https://cdn.siasat.com/wp-content/uploads/2020/09/Actor-Suriya.jpg
